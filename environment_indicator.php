@@ -15,7 +15,7 @@ $conf['environment_indicator_overwritten_color'] = '#32CD32';
 // Environment indicator module.
 $conf['environment_indicator_overwrite'] = TRUE;
 $conf['environment_indicator_overwritten_name'] = 'staging';
-$conf['environment_indicator_overwritten_color'] = '#FFD700';
+$conf['environment_indicator_overwritten_color'] = '#ff8000';
 
 // Environment indicator module.
 $conf['environment_indicator_overwrite'] = TRUE;
