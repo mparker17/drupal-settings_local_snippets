@@ -16,6 +16,9 @@ $conf['page_cache_maximum_age'] = 0;
 #$conf['preprocess_css'] = 0;
 #$conf['preprocess_js'] = 0;
 
+// Theme debugging.
+#$conf['theme_debug'] = TRUE;
+
 // On local and testing servers, display all logging and error messages.
 $conf['error_level'] = 2;
 
