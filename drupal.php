@@ -16,6 +16,9 @@ $conf['page_cache_maximum_age'] = 0;
 #$conf['preprocess_css'] = 0;
 #$conf['preprocess_js'] = 0;
 
+// Admin theme.
+#$conf['admin_theme'] = 'seven';
+
 // Theme debugging.
 #$conf['theme_debug'] = TRUE;
 
