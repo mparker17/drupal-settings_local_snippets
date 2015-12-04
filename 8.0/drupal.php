@@ -38,3 +38,8 @@ $config['system.logging']['error_level'] = 'verbose';
 // Default file/folder modes.
 #$settings['file_chmod_directory'] = 0775;
 #$settings['file_chmod_file'] = 0664;
+
+// Emergency "everything's broken" toggles.
+#$settings['rebuild_access'] = TRUE;
+#$settings['update_free_access'] = TRUE;
+#ini_set('memory_limit', '512M');
