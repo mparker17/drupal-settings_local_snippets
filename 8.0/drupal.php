@@ -1,5 +1,17 @@
 <?php
 
+// If your dev site is on Pantheon, see the "Environment" section at
+// admin/reports/status/php for the value.
+
+// Settings Drupal will put at the bottom of settings.php upon install.
+// If you use Pantheon, $settings['hash_salt'] will be in the environment
+// variables, which you can see from admin/reports/status/php on the dev site.
+// On Pantheon, $config_directories['sync'] directory will be in settings.php
+// already.
+$settings['hash_salt'] = '';
+$settings['install_profile'] = 'standard';
+#$config_directories['sync'] = '';
+
 // PHP settings.
 ini_set('date.timezone', 'UTC');
 
