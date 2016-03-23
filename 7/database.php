@@ -6,6 +6,6 @@ $databases['default']['default'] = array(
   'database' => 'example',
   'username' => 'example',
   'password' => 'example',
-  'host' => 'localhost',
+  'host' => 'db',
   'prefix' => '',
 );
