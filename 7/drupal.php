@@ -22,6 +22,9 @@ $conf['page_cache_maximum_age'] = 0;
 // Theme debugging.
 #$conf['theme_debug'] = TRUE;
 
+// Clean URLs.
+#$conf['clean_url'] = FALSE;
+
 // On local and testing servers, display all logging and error messages.
 $conf['error_level'] = 2;
 
