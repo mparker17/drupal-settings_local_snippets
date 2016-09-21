@@ -10,9 +10,6 @@ $conf['site_mail'] = 'example@example.dev';
 $conf['file_directory_path'] = 'sites/default/files';
 $conf['file_directory_temp'] = '/tmp';
 
-// URLs.
-$base_url = 'http://example.dev';
-
 // On local and testing servers, disable caching.
 $conf['cache'] = 0;
 $conf['cache_lifetime'] = 0;
