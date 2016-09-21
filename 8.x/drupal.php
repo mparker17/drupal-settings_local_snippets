@@ -40,6 +40,11 @@ assert_options(ASSERT_ACTIVE, TRUE);
 \Drupal\Component\Assertion\Handle::register();
 $config['system.logging']['error_level'] = 'verbose';
 
+// On local and testing servers, use the default mail system, so we can
+// redirect outgoing e-mails to a log file.
+$config['system.mail']['interface.default'] = 'php_mail';
+ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
+
 // Views development settings.
 $config['views.settings']['ui.show.master_display'] = TRUE;
 $config['views.settings']['ui.advanced_column'] = TRUE;
