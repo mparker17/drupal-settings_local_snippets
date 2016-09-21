@@ -1,12 +1,15 @@
 <?php
 
+// URLs.
+$base_url = 'http://example.dev';
+
+// Site.
+$conf['site_mail'] = 'example@example.dev';
+
 // Filesystem.
 $conf['file_public_path'] = 'sites/default/files';
 $conf['file_private_path'] = '/tmp';
 $conf['file_temporary_path'] = '/tmp';
-
-// URLs.
-$base_url = 'http://example.dev';
 
 // On local and testing servers, disable caching.
 $conf['cache'] = FALSE;
