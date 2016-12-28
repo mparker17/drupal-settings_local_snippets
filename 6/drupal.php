@@ -1,10 +1,10 @@
 <?php
 
 // URLs.
-$base_url = 'http://example.dev';
+$base_url = 'http://example.localhost';
 
 // Site.
-$conf['site_mail'] = 'example@example.dev';
+$conf['site_mail'] = 'example@example.localhost';
 
 // Filesystem.
 $conf['file_directory_path'] = 'sites/default/files';

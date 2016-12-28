@@ -1,4 +1,4 @@
 <?php
 
 // URLs.
-$options['uri'] = 'http://example.dev';
+$options['uri'] = 'http://example.localhost';

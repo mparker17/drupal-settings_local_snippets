@@ -16,11 +16,11 @@ ini_set('date.timezone', 'UTC');
 
 // URLs.
 $settings['trusted_host_patterns'] = array(
-  '^example\.dev$',
+  '^example\.localhost$',
 );
 
 // Site.
-$config['system.site']['mail'] = 'example@example.dev';
+$config['system.site']['mail'] = 'example@example.localhost';
 
 // Filesystem.
 $config_directories['sync'] = 'sites/default/config';
