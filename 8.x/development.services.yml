@@ -1,9 +1,21 @@
 services:
-  # Null cache backend.
-  #cache.backend.null:
-  #  class: Drupal\Core\Cache\NullBackendFactory
+  # Adds a null cache backend.
+  # Note that it won't be used by default. You must add a line like...
+  # `$settings['cache']['bins'][$cache_bin] = 'cache.backend.null';` for each
+  # cache bin you want null storage for into settings.local.php.
+  cache.backend.null:
+    class: Drupal\Core\Cache\NullBackendFactory
 
 parameters:
-  # Theme debugging.
-  #twig.config:
-  #  debug: true
+  # Toggles output for X-Drupal-Cache-Tags and X-Drupal-Cache-Contexts HTTP
+  # headers.
+  http.response.debug_cacheability_headers: true
+
+  # See https://twig.symfony.com/doc/2.x/api.html#environment-options for all
+  # available Twig configuration options.
+  # Note that Drupal extends the 'debug: true' output to show theme hook called,
+  # suggestions considered, and template file used. Enabling debug also
+  # implicitly sets 'auto_reload: true'.
+  twig.config:
+    debug: true
+    cache: false
