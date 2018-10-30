@@ -40,6 +40,7 @@ $config['system.mail']['interface.default'] = 'php_mail';
 ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
 
 // Views module.
+$config['views.settings']['ui.always_live_preview'] = FALSE;
 $config['views.settings']['ui.show.master_display'] = TRUE;
 $config['views.settings']['ui.advanced_column'] = TRUE;
 $config['views.settings']['ui.show.display_embed'] = TRUE;
