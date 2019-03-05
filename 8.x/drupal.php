@@ -19,7 +19,7 @@ $settings['file_chmod_file'] = 0664;
 // Local and testing servers - class autoloading, Drupal extension discovery.
 #$settings['class_loader_auto_detect'] = FALSE;
 #$settings['extension_discovery_scan_tests'] = TRUE;
-#$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
+#$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
 
 // Local and testing servers - errors, assertions.
 #$config['system.logging']['error_level'] = 'verbose';
