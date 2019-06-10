@@ -11,6 +11,12 @@ $conf['file_public_path'] = 'sites/default/files';
 $conf['file_private_path'] = '/tmp';
 $conf['file_temporary_path'] = '/tmp';
 
+// Don't scan folders that have non-Drupal files with Drupal extensions.
+$conf['file_scan_ignore_directories'] = array(
+  'node_modules',
+  'bower_components',
+);
+
 // On local and testing servers, disable caching.
 $conf['cache'] = FALSE;
 $conf['block_cache'] = FALSE;

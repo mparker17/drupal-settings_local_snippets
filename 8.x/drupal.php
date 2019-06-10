@@ -12,6 +12,14 @@ $config['system.file']['path.temporary'] = '/tmp';
 $settings['file_chmod_directory'] = 0775;
 $settings['file_chmod_file'] = 0664;
 
+// Don't scan folders that have non-Drupal files with Drupal extensions.
+if (empty($settings['file_scan_ignore_directories'])) {
+  $settings['file_scan_ignore_directories'] = [
+    'node_modules',
+    'bower_components',
+  ];
+}
+
 // Local and testing servers - admin tools.
 #$settings['rebuild_access'] = TRUE;
 #$settings['update_free_access'] = TRUE;
