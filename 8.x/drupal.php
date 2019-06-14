@@ -46,8 +46,9 @@ if (empty($settings['file_scan_ignore_directories'])) {
 $config['system.site']['mail'] = 'example@example.localhost';
 $config['system.mail']['interface.default'] = 'php_mail';
 
-// Redirect outgoing e-mails to a log file.
+// Redirect outgoing e-mails (log file or mailhog).
 #ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
+#ini_set('sendmail_path', '/usr/local/bin/mhsendmail');
 
 // Views module.
 $config['views.settings']['ui.always_live_preview'] = FALSE;

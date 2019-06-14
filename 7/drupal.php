@@ -40,5 +40,6 @@ $conf['error_level'] = 2;
 // On local and testing servers, use the default mail system.
 $conf['mail_system'] = array('default-system' => 'DefaultMailSystem');
 
-// Redirect outgoing e-mails to a log file.
+// Redirect outgoing e-mails (log file or mailhog).
 #ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
+#ini_set('sendmail_path', '/usr/local/bin/mhsendmail');
