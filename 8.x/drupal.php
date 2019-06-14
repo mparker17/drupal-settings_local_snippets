@@ -45,7 +45,9 @@ if (empty($settings['file_scan_ignore_directories'])) {
 // Local and testing servers - mail and mail system.
 $config['system.site']['mail'] = 'example@example.localhost';
 $config['system.mail']['interface.default'] = 'php_mail';
-ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
+
+// Redirect outgoing e-mails to a log file.
+#ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
 
 // Views module.
 $config['views.settings']['ui.always_live_preview'] = FALSE;

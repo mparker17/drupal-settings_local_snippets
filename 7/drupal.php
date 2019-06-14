@@ -37,7 +37,8 @@ $conf['page_cache_maximum_age'] = 0;
 // On local and testing servers, display all logging and error messages.
 $conf['error_level'] = 2;
 
-// On local and testing servers, use the default mail system, so we can
-// redirect outgoing e-mails to a log file.
+// On local and testing servers, use the default mail system.
 $conf['mail_system'] = array('default-system' => 'DefaultMailSystem');
-ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
+
+// Redirect outgoing e-mails to a log file.
+#ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
