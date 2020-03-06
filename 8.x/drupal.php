@@ -22,6 +22,7 @@ if (empty($settings['file_scan_ignore_directories'])) {
 
 // Local and testing servers - admin tools.
 #$settings['rebuild_access'] = TRUE;
+#$settings['skip_permissions_hardening'] = TRUE;
 #$settings['update_free_access'] = TRUE;
 
 // Local and testing servers - class autoloading, Drupal extension discovery.
