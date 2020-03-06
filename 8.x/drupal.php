@@ -42,13 +42,12 @@ if (empty($settings['file_scan_ignore_directories'])) {
 #$config['system.performance']['js']['preprocess'] = FALSE;
 #$config['system.theme']['admin'] = 'seven';
 
-// Local and testing servers - mail and mail system.
-$config['system.site']['mail'] = 'example@example.localhost';
+// Tell the system and mailsystem modules to use PHP's default mail system; then
+// tell PHP's default mail system to use Mailhog.
 $config['system.mail']['interface.default'] = 'php_mail';
-
-// Redirect outgoing e-mails (log file or mailhog).
-#ini_set('sendmail_path', 'tee -a /Applications/MAMP/Library/logs/example.mail.log > /dev/null');
-#ini_set('sendmail_path', '/usr/local/bin/mhsendmail');
+$config['mailsystem.settings']['defaults.sender'] = 'php_mail';
+ini_set('sendmail_path', '/usr/local/bin/mhsendmail');
+#ini_set('sendmail_path', 'tee -a logs/example.mail.log > /dev/null');
 
 // Views module.
 $config['views.settings']['ui.always_live_preview'] = FALSE;
