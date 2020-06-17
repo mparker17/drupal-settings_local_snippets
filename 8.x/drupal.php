@@ -29,6 +29,9 @@ if (empty($settings['file_scan_ignore_directories'])) {
 #$settings['class_loader_auto_detect'] = FALSE;
 #$settings['extension_discovery_scan_tests'] = TRUE;
 #$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
+#if (file_exists(dirname(__FILE__) . '/services.local.yml')) {
+#  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.local.yml';
+#}
 
 // Local and testing servers - errors, assertions.
 #$config['system.logging']['error_level'] = 'verbose';
